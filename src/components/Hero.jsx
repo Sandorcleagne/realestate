@@ -14,13 +14,13 @@ const Hero = () => {
         <div className="flex justify-center items-center gap-2 mt-12 sm:mt-16 sm:gap-4">
           <a
             href="#properties"
-            className="border border-white px-8 py-3 rounded uppercase text-sm"
+            className="border border-white px-8 py-3 rounded uppercase text-sm !no-underline text-white"
           >
             Properties
           </a>
           <a
             href="#contact"
-            className="border border-white bg-blue-500 px-8 py-3 rounded uppercase text-sm"
+            className="border border-white bg-blue-500 px-8 py-3 rounded uppercase text-sm !no-underline text-white"
           >
             Contact
           </a>
