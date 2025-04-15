@@ -36,7 +36,7 @@ export default function FullScreenDialog({ open, setOpen }) {
 
         <ul className="list-disc p-10">
           {navbarItems.map((items) => (
-            <Link href={items?.link}>
+            <Link href={items?.link} key={items?.id}>
               <li className="border-b-2 p-4">{items?.name}</li>
             </Link>
           ))}
