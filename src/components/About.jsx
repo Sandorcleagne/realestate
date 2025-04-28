@@ -49,7 +49,7 @@ const About = () => {
             properties. With local market knowledge and a customer-first
             approach, we help you make the right real estate decisions.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-2 rounded">
+          <button className="bg-red-800 text-white px-8 py-2 rounded">
             Learn More
           </button>
         </div>

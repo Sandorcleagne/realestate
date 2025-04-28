@@ -20,7 +20,7 @@ const Hero = () => {
           </a>
           <a
             href="#contact"
-            className="border border-white bg-blue-500 px-8 py-3 rounded uppercase text-sm !no-underline text-white"
+            className="border border-white bg-red-800 px-8 py-3 rounded uppercase text-sm !no-underline text-white"
           >
             Contact
           </a>
