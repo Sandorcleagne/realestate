@@ -23,7 +23,12 @@ export default function FullScreenDialog({ open, setOpen }) {
         onClose={handleClose}
         TransitionComponent={Transition}
       >
-        <div className="flex justify-end items-center">
+        <div className="flex justify-around items-center">
+          <Link href="/" className="!no-underline">
+            <p className="text-black font-bold uppercase leading-1">
+              Sharma Properties
+            </p>
+          </Link>
           <IconButton
             edge="start"
             color="inherit"
@@ -37,7 +42,9 @@ export default function FullScreenDialog({ open, setOpen }) {
         <ul className="list-disc p-10">
           {navbarItems.map((items) => (
             <Link href={items?.link} key={items?.id}>
-              <li className="border-b-2 p-4">{items?.name}</li>
+              <li className="border-b-2 p-4" onClick={handleClose}>
+                {items?.name}
+              </li>
             </Link>
           ))}
         </ul>

@@ -19,4 +19,9 @@ export const navbarItems = [
     name: "Testimonials",
     link: "#testimonials",
   },
+  {
+    id: 5,
+    name: "Contact",
+    link: "#contact",
+  },
 ];
