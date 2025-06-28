@@ -1,9 +1,9 @@
 export const navbarItems = [
-  {
-    id: 1,
-    name: "Home",
-    link: "#Header",
-  },
+  // {
+  //   id: 1,
+  //   name: "Home",
+  //   link: "#Header",
+  // },
   {
     id: 2,
     name: "About",

@@ -33,7 +33,13 @@ const Navbar = () => {
               Sharma Properties
             </p>
           </Link>
-          <ul className="hidden md:flex gap-7 text-white">
+          <ul
+            className={`${
+              scrolled
+                ? "hidden md:flex gap-7 text-white"
+                : "hidden md:flex gap-7 text-black"
+            } `}
+          >
             {navbarItems.map((items) => (
               <a
                 href={items?.link}
@@ -46,7 +52,11 @@ const Navbar = () => {
           </ul>
           <a
             href="tel:+91-8882103359"
-            className="md:flex justify-start items-center gap-2  px-4 md:px-8 py-2  hidden font-bold text-white"
+            className={`${
+              scrolled
+                ? "md:flex justify-start items-center gap-2  px-4 md:px-8 py-2  hidden font-bold text-white"
+                : "md:flex justify-start items-center gap-2  px-4 md:px-8 py-2  hidden font-bold text-black"
+            }`}
           >
             <Phone
               className="w-4 h-4  animate-ring"
@@ -56,14 +66,18 @@ const Navbar = () => {
             +91-8882103359
           </a>
           <Logs
-            className="w-8 h-8 text-white flex md:hidden"
+            className={`${
+              scrolled
+                ? "w-8 h-8 text-white flex md:hidden"
+                : "w-8 h-8 text-black flex md:hidden"
+            }`}
             onClick={() => handleClickOpen()}
           />
           <FullScreenDialog open={open} setOpen={setOpen} />
         </div>
         {/* -------------------------Mobile Menu---------------------------- */}
       </div>
-      <Hero />
+      {/* <Hero /> */}
     </React.Fragment>
   );
 };
